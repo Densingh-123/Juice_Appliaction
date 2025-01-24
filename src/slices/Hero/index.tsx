@@ -131,11 +131,10 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               <PrismicRichText field={slice.primary.body} />
             </div>
             <Button
-
-  buttonText={slice.primary.button_text}
-  className="hero-button mt-12"
-  onClick={() => {}} 
-/>
+            buttonLink={slice.primary.button_link || "https://dens-portfolio.vercel.app/"} 
+            buttonText={slice.primary.button_text}
+            className="hero-button mt-12"
+          />
 
           </div>
         </div>
